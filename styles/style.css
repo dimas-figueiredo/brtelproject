@@ -68,12 +68,12 @@ body{
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 50%;
+    width: 60%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 21.5px 0px;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
@@ -90,8 +90,23 @@ body{
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 400, bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rodape__endereco {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.cores {
+    color: var(--cor-terciaria) !important;
 }
 
 @media (max-width: 1200px) {
@@ -104,5 +119,11 @@ body{
     }
     .apresentacao__conteudo{
         width: auto;
+    }
+    .rodape__endereco {
+        flex-direction: column;
+    }
+    .apresentacao__endereco {
+        flex-direction: column;
     }
 }
